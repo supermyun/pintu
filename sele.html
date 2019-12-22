@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link href="css/pt.css">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>拼图游戏</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+        <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <style type="text/css">
+            div {
+                width: 900px;
+                align-self: auto;
+                vertical-align: middle;
+                display: flex;
+            }
+
+            img {
+                float: left;
+                width: 200px;
+                height: 200px;
+                margin: 10px;
+            }
+
+            body {
+                font-size: 28px;
+
+            }
+
+            footer {
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                height: 100px;
+                background-color: #f0ad4e;
+            }
+
+            .header {
+                width: 100%;
+                height: 100%;
+                background-color: red;
+            }
+
+            .sel {
+                background-color: gold;
+                width: 100%;
+                height: 100%;
+            }
+
+            #div {
+                background-color: green;
+                width: 100%;
+                height: 100%;
+            }
+
+            .xzt {
+                background-color: yellow;
+            }
+
+            #as {
+                background-color: blue;
+            }
+        </style>
+    </head>
+
+    <body class="body">
+        <script src="js/index.js"></script>
+        <h1 class="header">请选择拼图的难度！</h1>
+        <div class="sel">
+            <input type="radio" id="se" name="level" value="3" checked />简单（3*3） &nbsp;&nbsp;&nbsp;&nbsp
+            <input type="radio" id="se" name="level" value="4" />普通（4*4） &nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="radio" id="se" name="level" value="5" />一般（5*5）&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="radio" id="se" name="level" value="6" />困难（6*6）&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="radio" id="se" name="level" value="10" />超困难（10*10）&nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+        <h1 class="xzt">请选择你要拼的图！
+        </h1>
+        <div id="div">
+        </div>
+        <div id="as"></div>
+        <embed src="Jeff Victor.mp3" hidden="true" autostart="true" loop="true">
+        <footer>
+            旅途开始
+        </footer>
+    </body>
+
+</html>
